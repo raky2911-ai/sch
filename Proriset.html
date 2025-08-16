@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Profesional Riset Indonesia - Penerbit Akademik Terpercaya</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+theme: {
+extend: {
+colors: {
+'academic-blue': '#1e3a8a',
+'academic-navy': '#1e293b',
+'academic-gold': '#f59e0b',
+'academic-light': '#f8fafc'
+}
+}
+}
+}
+</script>
+<style>
+.gradient-bg {
+background: linear-gradient(135deg, #1e3a8a 0%, #1e293b 100%);
+}
+.book-shadow {
+box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+.hover-lift {
+transition: transform 0.3s ease;
+}
+.hover-lift:hover {
+transform: translateY(-5px);
+}
+</style>
+</head>
+<body class="bg-academic-light">
+<!-- Header -->
+<header class="gradient-bg text-white shadow-lg">
+<nav class="container mx-auto px-6 py-4">
+<div class="flex items-center justify-between">
+<div class="flex items-center space-x-3">
+<div class="w-12 h-12 bg-academic-gold rounded-lg flex items-center justify-center">
+<span class="text-academic-navy font-bold text-xl">📚</span>
+</div>
+<div>
+<h1 class="text-xl font-bold">Profesional Riset Indonesia</h1>
+<p class="text-blue-200 text-sm">Penerbit Akademik Terpercaya</p>
+</div>
+</div>
+<div class="hidden md:flex space-x-6">
+<a href="#home" class="hover:text-academic-gold transition-colors">Beranda</a>
+<a href="#services" class="hover:text-academic-gold transition-colors">Layanan</a>
+<a href="#profile" class="hover:text-academic-gold transition-colors">Profil</a>
+<a href="#isbn" class="hover:text-academic-gold transition-colors">ISBN</a>
+<a href="#book-collection" class="hover:text-academic-gold transition-colors">Koleksi Buku</a>
+<a href="#contact" class="hover:text-academic-gold transition-colors">Kontak</a>
+</div>
+<button class="md:hidden text-white">
+<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+</svg>
+</button>
+</div>
+</nav>
+</header>
+
+<!-- Hero Section -->
+<section id="home" class="gradient-bg text-white py-20">
+<div class="container mx-auto px-6 text-center">
+<h2 class="text-5xl font-bold mb-6">Wujudkan Karya Ilmiah Anda Menjadi Publikasi Berkualitas</h2>
+<p class="text-xl mb-8 text-blue-100 max-w-3xl mx-auto">Profesional Riset Indonesia adalah mitra terpercaya untuk menerbitkan buku akademik dan jurnal ilmiah dengan standar internasional</p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center">
+<button onclick="scrollToServices()" class="bg-academic-gold text-academic-navy px-8 py-4 rounded-lg font-semibold hover:bg-yellow-500 transition-colors text-lg">
+Mulai Terbitkan Sekarang
+</button>
+<button onclick="scrollToProfile()" class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-academic-navy transition-colors text-lg">
+Pelajari Lebih Lanjut
+</button>
+</div>
+</div>
+</section>
+
+<!-- Services Section -->
+<section id="services" class="py-20 bg-white">
+<div class="container mx-auto px-6">
+<div class="text-center mb-16">
+<h3 class="text-4xl font-bold text-academic-navy mb-4">Layanan Penerbitan Kami</h3>
+<p class="text-gray-600 text-lg max-w-2xl mx-auto">Kami menyediakan layanan penerbitan komprehensif untuk mendukung publikasi karya akademik Anda</p>
+</div>
+
+<div class="grid md:grid-cols-2 gap-12">
+<!-- Book Publishing -->
+<div class="book-shadow bg-white rounded-xl p-8 hover-lift">
+<div class="w-16 h-16 bg-academic-blue rounded-lg flex items-center justify-center mb-6">
+<span class="text-white text-2xl">📖</span>
+</div>
+<h4 class="text-2xl font-bold text-academic-navy mb-4">Penerbitan Buku</h4>
+<p class="text-gray-600 mb-6">Terbitkan buku akademik, monograf, dan buku teks dengan kualitas internasional. Proses editorial profesional dan distribusi luas.</p>
+<ul class="text-gray-600 mb-6 space-y-2">
+<li class="flex items-center"><span class="text-academic-gold mr-2">✓</span> Editing dan proofreading profesional</li>
+<li class="flex items-center"><span class="text-academic-gold mr-2">✓</span> Desain cover dan layout berkualitas</li>
+<li class="flex items-center"><span class="text-academic-gold mr-2">✓</span> ISBN dan registrasi resmi</li>
+<li class="flex items-center"><span class="text-academic-gold mr-2">✓</span> Distribusi online dan offline</li>
+</ul>
+<button onclick="showBookForm()" class="w-full bg-academic-blue text-white py-3 rounded-lg font-semibold hover:bg-blue-800 transition-colors">
+Ajukan Penerbitan Buku
+</button>
+</div>
+
+<!-- Journal Publishing -->
+<div class="book-shadow bg-white rounded-xl p-8 hover-lift">
+<div class="w-16 h-16 bg-academic-gold rounded-lg flex items-center justify-center mb-6">
+<span class="text-academic-navy text-2xl">📄</span>
+</div>
+<h4 class="text-2xl font-bold text-academic-navy mb-4">Penerbitan Jurnal</h4>
+<p class="text-gray-600 mb-6">Publikasikan artikel jurnal ilmiah dengan peer review berkualitas dan indeksasi internasional.</p>
+<ul class="text-gray-600 mb-6 space-y-2">
+<li class="flex items-center"><span class="text-academic-gold mr-2">✓</span> Peer review oleh ahli bidang</li>
+<li class="flex items-center"><span class="text-academic-gold mr-2">✓</span> Indeksasi Scopus dan WoS</li>
+<li class="flex items-center"><span class="text-academic-gold mr-2">✓</span> Open access dan subscription</li>
+<li class="flex items-center"><span class="text-academic-gold mr-2">✓</span> DOI untuk setiap artikel</li>
+</ul>
+<button onclick="showJournalForm()" class="w-full bg-academic-gold text-academic-navy py-3 rounded-lg font-semibold hover:bg-yellow-500 transition-colors">
+Submit Artikel Jurnal
+</button>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Publisher Profile -->
+<section id="profile" class="py-20 bg-gray-50">
+<div class="container mx-auto px-6">
+<div class="grid lg:grid-cols-2 gap-12 items-center">
+<div>
+<h3 class="text-4xl font-bold text-academic-navy mb-6">Profil Penerbit</h3>
+<p class="text-gray-600 text-lg mb-6">Profesional Riset Indonesia didirikan pada tahun 2015 dengan visi menjadi penerbit akademik terdepan di Indonesia. Kami telah menerbitkan lebih dari 500 judul buku dan 1000+ artikel jurnal.</p>
+
+<div class="grid grid-cols-2 gap-6 mb-8">
+<div class="text-center">
+<div class="text-3xl font-bold text-academic-blue">500+</div>
+<div class="text-gray-600">Buku Diterbitkan</div>
+</div>
+<div class="text-center">
+<div class="text-3xl font-bold text-academic-blue">1000+</div>
+<div class="text-gray-600">Artikel Jurnal</div>
+</div>
+<div class="text-center">
+<div class="text-3xl font-bold text-academic-blue">50+</div>
+<div class="text-gray-600">Universitas Mitra</div>
+</div>
+<div class="text-center">
+<div class="text-3xl font-bold text-academic-blue">8</div>
+<div class="text-gray-600">Tahun Pengalaman</div>
+</div>
+</div>
+
+<div class="space-y-4">
+<h4 class="text-xl font-semibold text-academic-navy">Keunggulan Kami:</h4>
+<ul class="space-y-2 text-gray-600">
+<li class="flex items-center"><span class="text-academic-gold mr-2">🏆</span> Terakreditasi LIPI dan Kemendikbud</li>
+<li class="flex items-center"><span class="text-academic-gold mr-2">🌍</span> Jaringan distribusi internasional</li>
+<li class="flex items-center"><span class="text-academic-gold mr-2">⚡</span> Proses penerbitan cepat (30-60 hari)</li>
+<li class="flex items-center"><span class="text-academic-gold mr-2">💎</span> Kualitas editorial standar internasional</li>
+</ul>
+</div>
+</div>
+
+<div class="bg-white rounded-xl p-8 book-shadow">
+<h4 class="text-2xl font-bold text-academic-navy mb-6">Tim Editorial</h4>
+<div class="space-y-4">
+<div class="flex items-center space-x-4">
+<div class="w-12 h-12 bg-academic-blue rounded-full flex items-center justify-center text-white font-bold">DR</div>
+<div>
+<div class="font-semibold text-academic-navy">Dr. Ahmad Rianto, M.Si</div>
+<div class="text-gray-600 text-sm">Editor in Chief</div>
+</div>
+</div>
+<div class="flex items-center space-x-4">
+<div class="w-12 h-12 bg-academic-gold rounded-full flex items-center justify-center text-academic-navy font-bold">PR</div>
+<div>
+<div class="font-semibold text-academic-navy">Prof. Sari Indrawati, Ph.D</div>
+<div class="text-gray-600 text-sm">Managing Editor</div>
+</div>
+</div>
+<div class="flex items-center space-x-4">
+<div class="w-12 h-12 bg-academic-blue rounded-full flex items-center justify-center text-white font-bold">DR</div>
+<div>
+<div class="font-semibold text-academic-navy">Dr. Budi Santoso, M.A</div>
+<div class="text-gray-600 text-sm">Technical Editor</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- ISBN Resources -->
+<section id="isbn" class="py-20 bg-white">
+<div class="container mx-auto px-6">
+<div class="text-center mb-16">
+<h3 class="text-4xl font-bold text-academic-navy mb-4">Sumber Daya ISBN</h3>
+<p class="text-gray-600 text-lg max-w-2xl mx-auto">Akses mudah ke informasi dan layanan ISBN untuk publikasi Anda</p>
+</div>
+
+<div class="grid md:grid-cols-3 gap-8">
+<div class="bg-gray-50 rounded-xl p-6 text-center hover-lift">
+<div class="w-16 h-16 bg-academic-blue rounded-lg flex items-center justify-center mx-auto mb-4">
+<span class="text-white text-2xl">🏛️</span>
+</div>
+<h4 class="text-xl font-bold text-academic-navy mb-3">Perpustakaan Nasional RI</h4>
+<p class="text-gray-600 mb-4">Portal resmi untuk registrasi ISBN di Indonesia</p>
+<a href="https://isbn.perpusnas.go.id" target="_blank" class="inline-block bg-academic-blue text-white px-6 py-2 rounded-lg hover:bg-blue-800 transition-colors">
+Kunjungi Website
+</a>
+</div>
+
+<div class="bg-gray-50 rounded-xl p-6 text-center hover-lift">
+<div class="w-16 h-16 bg-academic-gold rounded-lg flex items-center justify-center mx-auto mb-4">
+<span class="text-academic-navy text-2xl">📋</span>
+</div>
+<h4 class="text-xl font-bold text-academic-navy mb-3">Panduan ISBN</h4>
+<p class="text-gray-600 mb-4">Panduan lengkap cara mengajukan dan menggunakan ISBN</p>
+<button onclick="showISBNGuide()" class="bg-academic-gold text-academic-navy px-6 py-2 rounded-lg hover:bg-yellow-500 transition-colors">
+Lihat Panduan
+</button>
+</div>
+
+<div class="bg-gray-50 rounded-xl p-6 text-center hover-lift">
+<div class="w-16 h-16 bg-green-600 rounded-lg flex items-center justify-center mx-auto mb-4">
+<span class="text-white text-2xl">🔍</span>
+</div>
+<h4 class="text-xl font-bold text-academic-navy mb-3">Cek Status ISBN</h4>
+<p class="text-gray-600 mb-4">Periksa status pengajuan ISBN Anda</p>
+<button onclick="showISBNChecker()" class="bg-green-600 text-white px-6 py-2 rounded-lg hover:bg-green-700 transition-colors">
+Cek Status
+</button>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Book Collection Section -->
+<section id="book-collection" class="py-20 bg-white">
+<div class="container mx-auto px-6">
+<div class="text-center mb-16">
+<h3 class="text-4xl font-bold text-academic-navy mb-4">Koleksi Buku Siap ISBN</h3>
+<p class="text-gray-600 text-lg max-w-3xl mx-auto">Daftar buku-buku yang telah diterbitkan dan sedang dalam proses pengajuan ISBN ke Perpustakaan Nasional RI</p>
+</div>
+
+<!-- Filter Tabs -->
+<div class="flex justify-center mb-12">
+<div class="bg-gray-100 rounded-lg p-1 flex">
+<button onclick="filterBooks('all')" class="px-6 py-2 rounded-md font-semibold transition-colors filter-btn active" data-filter="all">
+Semua Buku
+</button>
+<button onclick="filterBooks('published')" class="px-6 py-2 rounded-md font-semibold transition-colors filter-btn" data-filter="published">
+Sudah Terbit
+</button>
+<button onclick="filterBooks('process')" class="px-6 py-2 rounded-md font-semibold transition-colors filter-btn" data-filter="process">
+Proses ISBN
+</button>
+<button onclick="filterBooks('upcoming')" class="px-6 py-2 rounded-md font-semibold transition-colors filter-btn" data-filter="upcoming">
+Akan Terbit
+</button>
+</div>
+</div>
+
+<!-- Books Grid -->
+<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" id="booksGrid">
+<!-- Published Books -->
+<div class="book-item published bg-white rounded-xl book-shadow p-6 hover-lift">
+<div class="flex items-start space-x-4">
+<div class="w-16 h-20 bg-academic-blue rounded flex items-center justify-center text-white font-bold text-xs">
+BUKU
+</div>
+<div class="flex-1">
+<h4 class="font-bold text-academic-navy mb-2">Metodologi Penelitian Kualitatif</h4>
+<p class="text-sm text-gray-600 mb-2">Dr. Ahmad Rianto, M.Si</p>
+<div class="flex items-center space-x-2 mb-3">
+<span class="bg-green-100 text-green-800 px-2 py-1 rounded text-xs font-semibold">Sudah Terbit</span>
+<span class="text-xs text-gray-500">ISBN: 978-602-123-456-7</span>
+</div>
+<div class="flex space-x-2">
+<a href="https://isbn.perpusnas.go.id/Account/SearchBuku" target="_blank" class="text-xs bg-academic-blue text-white px-3 py-1 rounded hover:bg-blue-800">
+Cek di Perpusnas
+</a>
+<button onclick="showBookDetail('metodologi')" class="text-xs bg-gray-200 text-gray-700 px-3 py-1 rounded hover:bg-gray-300">
+Detail
+</button>
+</div>
+</div>
+</div>
+</div>
+
+<div class="book-item published bg-white rounded-xl book-shadow p-6 hover-lift">
+<div class="flex items-start space-x-4">
+<div class="w-16 h-20 bg-academic-gold rounded flex items-center justify-center text-academic-navy font-bold text-xs">
+BUKU
+</div>
+<div class="flex-1">
+<h4 class="font-bold text-academic-navy mb-2">Ekonomi Digital Indonesia</h4>
+<p class="text-sm text-gray-600 mb-2">Prof. Sari Indrawati, Ph.D</p>
+<div class="flex items-center space-x-2 mb-3">
+<span class="bg-green-100 text-green-800 px-2 py-1 rounded text-xs font-semibold">Sudah Terbit</span>
+<span class="text-xs text-gray-500">ISBN: 978-602-123-457-4</span>
+</div>
+<div class="flex space-x-2">
+<a href="https://isbn.perpusnas.go.id/Account/SearchBuku" target="_blank" class="text-xs bg-academic-blue text-white px-3 py-1 rounded hover:bg-blue-800">
+Cek di Perpusnas
+</a>
+<button onclick="showBookDetail('ekonomi')" class="text-xs bg-gray-200 text-gray-700 px-3 py-1 rounded hover:bg-gray-300">
+Detail
+</button>
+</div>
+</div>
+</div>
+</div>
+
+<!-- Books in ISBN Process -->
+<div class="book-item process bg-white rounded-xl book-shadow p-6 hover-lift">
+<div class="flex items-start space-x-4">
+<div class="w-16 h-20 bg-yellow-500 rounded flex items-center justify-center text-white font-bold text-xs">
+BUKU
+</div>
+<div class="flex-1">
+<h4 class="font-bold text-academic-navy mb-2">Pendidikan Karakter di Era Digital</h4>
+<p class="text-sm text-gray-600 mb-2">Dr. Budi Santoso, M.A</p>
+<div class="flex items-center space-x-2 mb-3">
+<span class="bg-yellow-100 text-yellow-800 px-2 py-1 rounded text-xs font-semibold">Proses ISBN</span>
+<span class="text-xs text-gray-500">Pengajuan: 15 Des 2024</span>
+</div>
+<div class="flex space-x-2">
+<a href="https://isbn.perpusnas.go.id/Account/Login" target="_blank" class="text-xs bg-yellow-500 text-white px-3 py-1 rounded hover:bg-yellow-600">
+Cek Status
+</a>
+<button onclick="showBookDetail('pendidikan')" class="text-xs bg-gray-200 text-gray-700 px-3 py-1 rounded hover:bg-gray-300">
+Detail
+</button>
+</div>
+</div>
+</div>
+</div>
+
+<div class="book-item process bg-white rounded-xl book-shadow p-6 hover-lift">
+<div class="flex items-start space-x-4">
+<div class="w-16 h-20 bg-yellow-500 rounded flex items-center justify-center text-white font-bold text-xs">
+BUKU
+</div>
+<div class="flex-1">
+<h4 class="font-bold text-academic-navy mb-2">Manajemen Sumber Daya Manusia</h4>
+<p class="text-sm text-gray-600 mb-2">Dr. Lisa Permata, M.M</p>
+<div class="flex items-center space-x-2 mb-3">
+<span class="bg-yellow-100 text-yellow-800 px-2 py-1 rounded text-xs font-semibold">Proses ISBN</span>
+<span class="text-xs text-gray-500">Pengajuan: 20 Des 2024</span>
+</div>
+<div class="flex space-x-2">
+<a href="https://isbn.perpusnas.go.id/Account/Login" target="_blank" class="text-xs bg-yellow-500 text-white px-3 py-1 rounded hover:bg-yellow-600">
+Cek Status
+</a>
+<button onclick="showBookDetail('manajemen')" class="text-xs bg-gray-200 text-gray-700 px-3 py-1 rounded hover:bg-gray-300">
+Detail
+</button>
+</div>
+</div>
+</div>
+</div>
+
+<!-- Upcoming Books -->
+<div class="book-item upcoming bg-white rounded-xl book-shadow p-6 hover-lift">
+<div class="flex items-start space-x-4">
+<div class="w-16 h-20 bg-gray-400 rounded flex items-center justify-center text-white font-bold text-xs">
+BUKU
+</div>
+<div class="flex-1">
+<h4 class="font-bold text-academic-navy mb-2">Teknologi Blockchain untuk Pemula</h4>
+<p class="text-sm text-gray-600 mb-2">Dr. Andi Wijaya, M.T</p>
+<div class="flex items-center space-x-2 mb-3">
+<span class="bg-gray-100 text-gray-800 px-2 py-1 rounded text-xs font-semibold">Akan Terbit</span>
+<span class="text-xs text-gray-500">Target: Jan 2025</span>
+</div>
+<div class="flex space-x-2">
+<button onclick="showBookDetail('blockchain')" class="text-xs bg-gray-200 text-gray-700 px-3 py-1 rounded hover:bg-gray-300">
+Detail
+</button>
+<button onclick="showPreOrder()" class="text-xs bg-academic-blue text-white px-3 py-1 rounded hover:bg-blue-800">
+Pre-Order
+</button>
+</div>
+</div>
+</div>
+</div>
+
+<div class="book-item upcoming bg-white rounded-xl book-shadow p-6 hover-lift">
+<div class="flex items-start space-x-4">
+<div class="w-16 h-20 bg-gray-400 rounded flex items-center justify-center text-white font-bold text-xs">
+BUKU
+</div>
+<div class="flex-1">
+<h4 class="font-bold text-academic-navy mb-2">Psikologi Sosial Kontemporer</h4>
+<p class="text-sm text-gray-600 mb-2">Prof. Maya Sari, Ph.D</p>
+<div class="flex items-center space-x-2 mb-3">
+<span class="bg-gray-100 text-gray-800 px-2 py-1 rounded text-xs font-semibold">Akan Terbit</span>
+<span class="text-xs text-gray-500">Target: Feb 2025</span>
+</div>
+<div class="flex space-x-2">
+<button onclick="showBookDetail('psikologi')" class="text-xs bg-gray-200 text-gray-700 px-3 py-1 rounded hover:bg-gray-300">
+Detail
+</button>
+<button onclick="showPreOrder()" class="text-xs bg-academic-blue text-white px-3 py-1 rounded hover:bg-blue-800">
+Pre-Order
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- Quick Links to Perpusnas -->
+<div class="mt-16 bg-gray-50 rounded-xl p-8">
+<h4 class="text-2xl font-bold text-academic-navy mb-6 text-center">Link Cepat ke Perpustakaan Nasional RI</h4>
+<div class="grid md:grid-cols-4 gap-4">
+<a href="https://isbn.perpusnas.go.id" target="_blank" class="bg-white p-4 rounded-lg text-center hover:shadow-md transition-shadow">
+<div class="text-2xl mb-2">🏛️</div>
+<div class="font-semibold text-academic-navy text-sm">Portal ISBN</div>
+</a>
+<a href="https://isbn.perpusnas.go.id/Account/SearchBuku" target="_blank" class="bg-white p-4 rounded-lg text-center hover:shadow-md transition-shadow">
+<div class="text-2xl mb-2">🔍</div>
+<div class="font-semibold text-academic-navy text-sm">Cari Buku</div>
+</a>
+<a href="https://isbn.perpusnas.go.id/Account/Login" target="_blank" class="bg-white p-4 rounded-lg text-center hover:shadow-md transition-shadow">
+<div class="text-2xl mb-2">👤</div>
+<div class="font-semibold text-academic-navy text-sm">Login Penerbit</div>
+</a>
+<a href="https://isbn.perpusnas.go.id/Account/Register" target="_blank" class="bg-white p-4 rounded-lg text-center hover:shadow-md transition-shadow">
+<div class="text-2xl mb-2">📝</div>
+<div class="font-semibold text-academic-navy text-sm">Daftar Penerbit</div>
+</a>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Call to Action -->
+<section class="py-20 gradient-bg text-white">
+<div class="container mx-auto px-6 text-center">
+<h3 class="text-4xl font-bold mb-6">Siap Menerbitkan Karya Anda?</h3>
+<p class="text-xl mb-8 text-blue-100 max-w-3xl mx-auto">Bergabunglah dengan ratusan akademisi yang telah mempercayakan publikasi mereka kepada kami. Dapatkan konsultasi gratis sekarang!</p>
+
+<div class="grid md:grid-cols-3 gap-8 mb-12">
+<div class="text-center">
+<div class="text-4xl mb-2">⚡</div>
+<h4 class="text-xl font-semibold mb-2">Proses Cepat</h4>
+<p class="text-blue-100">Penerbitan dalam 30-60 hari</p>
+</div>
+<div class="text-center">
+<div class="text-4xl mb-2">💎</div>
+<h4 class="text-xl font-semibold mb-2">Kualitas Terjamin</h4>
+<p class="text-blue-100">Standar editorial internasional</p>
+</div>
+<div class="text-center">
+<div class="text-4xl mb-2">🌍</div>
+<h4 class="text-xl font-semibold mb-2">Jangkauan Luas</h4>
+<p class="text-blue-100">Distribusi nasional & internasional</p>
+</div>
+</div>
+
+<div class="flex flex-col sm:flex-row gap-4 justify-center">
+<button onclick="showContactForm()" class="bg-academic-gold text-academic-navy px-8 py-4 rounded-lg font-semibold hover:bg-yellow-500 transition-colors text-lg">
+Konsultasi Gratis Sekarang
+</button>
+<button onclick="window.open('https://wa.me/6281234567890', '_blank')" class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-academic-navy transition-colors text-lg">
+WhatsApp Kami
+</button>
+</div>
+</div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="py-20 bg-gray-50">
+<div class="container mx-auto px-6">
+<div class="text-center mb-16">
+<h3 class="text-4xl font-bold text-academic-navy mb-4">Hubungi Kami</h3>
+<p class="text-gray-600 text-lg">Tim kami siap membantu mewujudkan publikasi akademik Anda</p>
+</div>
+
+<div class="grid lg:grid-cols-2 gap-12">
+<div>
+<h4 class="text-2xl font-bold text-academic-navy mb-6">Informasi Kontak</h4>
+<div class="space-y-4">
+<div class="flex items-center space-x-4">
+<div class="w-12 h-12 bg-academic-blue rounded-lg flex items-center justify-center">
+<span class="text-white">📍</span>
+</div>
+<div>
+<div class="font-semibold text-academic-navy">Alamat</div>
+<div class="text-gray-600">Jl. Akademik No. 123, Jakarta Selatan 12345</div>
+</div>
+</div>
+<div class="flex items-center space-x-4">
+<div class="w-12 h-12 bg-academic-gold rounded-lg flex items-center justify-center">
+<span class="text-academic-navy">📞</span>
+</div>
+<div>
+<div class="font-semibold text-academic-navy">Telepon</div>
+<div class="text-gray-600">+62 21 1234 5678</div>
+</div>
+</div>
+<div class="flex items-center space-x-4">
+<div class="w-12 h-12 bg-green-600 rounded-lg flex items-center justify-center">
+<span class="text-white">📧</span>
+</div>
+<div>
+<div class="font-semibold text-academic-navy">Email</div>
+<div class="text-gray-600">info@profesionalriset.id</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="bg-white rounded-xl p-8 book-shadow">
+<h4 class="text-2xl font-bold text-academic-navy mb-6">Kirim Pesan</h4>
+<form id="contactForm" class="space-y-4">
+<div>
+<label class="block text-academic-navy font-semibold mb-2">Nama Lengkap</label>
+<input type="text" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-academic-blue focus:border-transparent" placeholder="Masukkan nama lengkap">
+</div>
+<div>
+<label class="block text-academic-navy font-semibold mb-2">Email</label>
+<input type="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-academic-blue focus:border-transparent" placeholder="Masukkan email">
+</div>
+<div>
+<label class="block text-academic-navy font-semibold mb-2">Jenis Layanan</label>
+<select class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-academic-blue focus:border-transparent">
+<option>Penerbitan Buku</option>
+<option>Penerbitan Jurnal</option>
+<option>Konsultasi Umum</option>
+</select>
+</div>
+<div>
+<label class="block text-academic-navy font-semibold mb-2">Pesan</label>
+<textarea rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-academic-blue focus:border-transparent" placeholder="Jelaskan kebutuhan Anda"></textarea>
+</div>
+<button type="submit" class="w-full bg-academic-blue text-white py-3 rounded-lg font-semibold hover:bg-blue-800 transition-colors">
+Kirim Pesan
+</button>
+</form>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-academic-navy text-white py-12">
+<div class="container mx-auto px-6">
+<div class="grid md:grid-cols-4 gap-8">
+<div>
+<div class="flex items-center space-x-3 mb-4">
+<div class="w-10 h-10 bg-academic-gold rounded-lg flex items-center justify-center">
+<span class="text-academic-navy font-bold">📚</span>
+</div>
+<div>
+<h5 class="font-bold">Profesional Riset Indonesia</h5>
+</div>
+</div>
+<p class="text-gray-300 text-sm">Penerbit akademik terpercaya untuk buku dan jurnal ilmiah berkualitas internasional.</p>
+</div>
+<div>
+<h5 class="font-bold mb-4">Layanan</h5>
+<ul class="space-y-2 text-gray-300 text-sm">
+<li><a href="#" class="hover:text-academic-gold">Penerbitan Buku</a></li>
+<li><a href="#" class="hover:text-academic-gold">Penerbitan Jurnal</a></li>
+<li><a href="#" class="hover:text-academic-gold">Editing & Proofreading</a></li>
+<li><a href="#" class="hover:text-academic-gold">Konsultasi Publikasi</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-bold mb-4">Sumber Daya</h5>
+<ul class="space-y-2 text-gray-300 text-sm">
+<li><a href="#" class="hover:text-academic-gold">Panduan Penulis</a></li>
+<li><a href="#" class="hover:text-academic-gold">Template Naskah</a></li>
+<li><a href="#" class="hover:text-academic-gold">FAQ</a></li>
+<li><a href="#" class="hover:text-academic-gold">Blog</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-bold mb-4">Ikuti Kami</h5>
+<div class="flex space-x-3">
+<a href="#" class="w-8 h-8 bg-academic-gold rounded flex items-center justify-center text-academic-navy hover:bg-yellow-500">f</a>
+<a href="#" class="w-8 h-8 bg-academic-gold rounded flex items-center justify-center text-academic-navy hover:bg-yellow-500">t</a>
+<a href="#" class="w-8 h-8 bg-academic-gold rounded flex items-center justify-center text-academic-navy hover:bg-yellow-500">in</a>
+</div>
+</div>
+</div>
+<div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-300 text-sm">
+<p>&copy; 2024 Profesional Riset Indonesia. Semua hak dilindungi.</p>
+</div>
+</div>
+</footer>
+
+<!-- Modals -->
+<div id="bookModal" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50">
+<div class="bg-white rounded-xl p-8 max-w-md w-full mx-4">
+<h3 class="text-2xl font-bold text-academic-navy mb-4">Ajukan Penerbitan Buku</h3>
+<form class="space-y-4">
+<input type="text" placeholder="Judul Buku" class="w-full px-4 py-3 border rounded-lg">
+<input type="text" placeholder="Nama Penulis" class="w-full px-4 py-3 border rounded-lg">
+<input type="email" placeholder="Email" class="w-full px-4 py-3 border rounded-lg">
+<textarea placeholder="Deskripsi Singkat" rows="3" class="w-full px-4 py-3 border rounded-lg"></textarea>
+<div class="flex gap-4">
+<button type="submit" class="flex-1 bg-academic-blue text-white py-3 rounded-lg hover:bg-blue-800">Kirim</button>
+<button type="button" onclick="closeModal('bookModal')" class="flex-1 bg-gray-300 text-gray-700 py-3 rounded-lg hover:bg-gray-400">Batal</button>
+</div>
+</form>
+</div>
+</div>
+
+<div id="journalModal" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50">
+<div class="bg-white rounded-xl p-8 max-w-md w-full mx-4">
+<h3 class="text-2xl font-bold text-academic-navy mb-4">Submit Artikel Jurnal</h3>
+<form class="space-y-4">
+<input type="text" placeholder="Judul Artikel" class="w-full px-4 py-3 border rounded-lg">
+<input type="text" placeholder="Nama Penulis" class="w-full px-4 py-3 border rounded-lg">
+<input type="email" placeholder="Email" class="w-full px-4 py-3 border rounded-lg">
+<select class="w-full px-4 py-3 border rounded-lg">
+<option>Pilih Bidang Ilmu</option>
+<option>Pendidikan</option>
+<option>Ekonomi</option>
+<option>Sosial</option>
+<option>Teknologi</option>
+</select>
+<div class="flex gap-4">
+<button type="submit" class="flex-1 bg-academic-gold text-academic-navy py-3 rounded-lg hover:bg-yellow-500">Kirim</button>
+<button type="button" onclick="closeModal('journalModal')" class="flex-1 bg-gray-300 text-gray-700 py-3 rounded-lg hover:bg-gray-400">Batal</button>
+</div>
+</form>
+</div>
+</div>
+
+<!-- Book Detail Modal -->
+<div id="bookDetailModal" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50">
+<div class="bg-white rounded-xl p-8 max-w-2xl w-full mx-4 max-h-96 overflow-y-auto">
+<div class="flex justify-between items-start mb-6">
+<h3 class="text-2xl font-bold text-academic-navy" id="bookDetailTitle">Detail Buku</h3>
+<button onclick="closeModal('bookDetailModal')" class="text-gray-500 hover:text-gray-700">
+<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+</svg>
+</button>
+</div>
+<div id="bookDetailContent">
+<!-- Content will be populated by JavaScript -->
+</div>
+</div>
+</div>
+
+<script>
+function scrollToServices() {
+document.getElementById('services').scrollIntoView({ behavior: 'smooth' });
+}
+
+function scrollToProfile() {
+document.getElementById('profile').scrollIntoView({ behavior: 'smooth' });
+}
+
+function showBookForm() {
+document.getElementById('bookModal').classList.remove('hidden');
+document.getElementById('bookModal').classList.add('flex');
+}
+
+function showJournalForm() {
+document.getElementById('journalModal').classList.remove('hidden');
+document.getElementById('journalModal').classList.add('flex');
+}
+
+function closeModal(modalId) {
+document.getElementById(modalId).classList.add('hidden');
+document.getElementById(modalId).classList.remove('flex');
+}
+
+function showISBNGuide() {
+alert('Panduan ISBN:\n\n1. Siapkan naskah lengkap\n2. Isi formulir di website Perpusnas\n3. Upload dokumen pendukung\n4. Tunggu verifikasi (3-7 hari)\n5. Dapatkan nomor ISBN\n\nUntuk bantuan lebih lanjut, hubungi tim kami!');
+}
+
+function showISBNChecker() {
+const isbn = prompt('Masukkan nomor ISBN atau nomor pengajuan:');
+if (isbn) {
+alert(`Status ISBN ${isbn}:\n\nSedang dalam proses verifikasi.\nEstimasi selesai: 3-5 hari kerja.\n\nUntuk informasi lebih detail, hubungi customer service kami.`);
+}
+}
+
+function showContactForm() {
+document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+}
+
+// Contact form submission
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+e.preventDefault();
+alert('Terima kasih! Pesan Anda telah dikirim. Tim kami akan menghubungi Anda dalam 1x24 jam.');
+this.reset();
+});
+
+// Modal form submissions
+document.querySelectorAll('#bookModal form, #journalModal form').forEach(form => {
+form.addEventListener('submit', function(e) {
+e.preventDefault();
+alert('Pengajuan berhasil dikirim! Tim kami akan menghubungi Anda untuk proses selanjutnya.');
+this.reset();
+closeModal(this.closest('.fixed').id);
+});
+});
+
+// Close modals when clicking outside
+document.querySelectorAll('.fixed').forEach(modal => {
+modal.addEventListener('click', function(e) {
+if (e.target === this) {
+closeModal(this.id);
+}
+});
+});
+
+// Book filtering functionality
+function filterBooks(category) {
+const books = document.querySelectorAll('.book-item');
+const buttons = document.querySelectorAll('.filter-btn');
+
+// Update active button
+buttons.forEach(btn => {
+btn.classList.remove('active', 'bg-academic-blue', 'text-white');
+btn.classList.add('text-gray-600');
+});
+
+const activeBtn = document.querySelector(`[data-filter="${category}"]`);
+activeBtn.classList.add('active', 'bg-academic-blue', 'text-white');
+activeBtn.classList.remove('text-gray-600');
+
+// Filter books
+books.forEach(book => {
+if (category === 'all' || book.classList.contains(category)) {
+book.style.display = 'block';
+} else {
+book.style.display = 'none';
+}
+});
+}
+
+// Book detail data
+const bookDetails = {
+metodologi: {
+title: 'Metodologi Penelitian Kualitatif',
+author: 'Dr. Ahmad Rianto, M.Si',
+isbn: '978-602-123-456-7',
+status: 'Sudah Terbit',
+pages: '324 halaman',
+year: '2024',
+description: 'Buku ini membahas secara komprehensif tentang metodologi penelitian kualitatif, mulai dari konsep dasar hingga teknik analisis data. Cocok untuk mahasiswa dan peneliti yang ingin memahami pendekatan kualitatif dalam penelitian.',
+links: [
+{ name: 'Cek di Perpusnas', url: 'https://isbn.perpusnas.go.id/Account/SearchBuku' },
+{ name: 'Beli Online', url: '#' }
+]
+},
+ekonomi: {
+title: 'Ekonomi Digital Indonesia',
+author: 'Prof. Sari Indrawati, Ph.D',
+isbn: '978-602-123-457-4',
+status: 'Sudah Terbit',
+pages: '298 halaman',
+year: '2024',
+description: 'Analisis mendalam tentang perkembangan ekonomi digital di Indonesia, termasuk dampaknya terhadap pertumbuhan ekonomi dan transformasi bisnis.',
+links: [
+{ name: 'Cek di Perpusnas', url: 'https://isbn.perpusnas.go.id/Account/SearchBuku' },
+{ name: 'Beli Online', url: '#' }
+]
+},
+pendidikan: {
+title: 'Pendidikan Karakter di Era Digital',
+author: 'Dr. Budi Santoso, M.A',
+isbn: 'Sedang Proses',
+status: 'Proses ISBN',
+pages: '276 halaman',
+year: '2024',
+description: 'Membahas strategi dan implementasi pendidikan karakter dalam konteks era digital, dengan fokus pada tantangan dan peluang teknologi dalam pembentukan karakter.',
+links: [
+{ name: 'Cek Status ISBN', url: 'https://isbn.perpusnas.go.id/Account/Login' }
+]
+},
+manajemen: {
+title: 'Manajemen Sumber Daya Manusia',
+author: 'Dr. Lisa Permata, M.M',
+isbn: 'Sedang Proses',
+status: 'Proses ISBN',
+pages: '312 halaman',
+year: '2024',
+description: 'Panduan komprehensif tentang manajemen SDM modern, mencakup rekrutmen, pengembangan, dan retensi karyawan di era digital.',
+links: [
+{ name: 'Cek Status ISBN', url: 'https://isbn.perpusnas.go.id/Account/Login' }
+]
+},
+blockchain: {
+title: 'Teknologi Blockchain untuk Pemula',
+author: 'Dr. Andi Wijaya, M.T',
+isbn: 'Belum Tersedia',
+status: 'Akan Terbit',
+pages: '256 halaman',
+year: '2025',
+description: 'Pengenalan teknologi blockchain yang mudah dipahami, mulai dari konsep dasar hingga aplikasi praktis dalam berbagai industri.',
+links: [
+{ name: 'Pre-Order', url: '#' }
+]
+},
+psikologi: {
+title: 'Psikologi Sosial Kontemporer',
+author: 'Prof. Maya Sari, Ph.D',
+isbn: 'Belum Tersedia',
+status: 'Akan Terbit',
+pages: '342 halaman',
+year: '2025',
+description: 'Eksplorasi mendalam tentang psikologi sosial dalam konteks masyarakat modern, termasuk pengaruh media sosial dan teknologi.',
+links: [
+{ name: 'Pre-Order', url: '#' }
+]
+}
+};
+
+function showBookDetail(bookId) {
+const book = bookDetails[bookId];
+if (!book) return;
+
+document.getElementById('bookDetailTitle').textContent = book.title;
+
+const content = `
+<div class="space-y-4">
+<div class="grid md:grid-cols-2 gap-4">
+<div>
+<h4 class="font-semibold text-academic-navy mb-2">Informasi Buku</h4>
+<div class="space-y-2 text-sm">
+<div><span class="font-medium">Penulis:</span> ${book.author}</div>
+<div><span class="font-medium">ISBN:</span> ${book.isbn}</div>
+<div><span class="font-medium">Status:</span>
+<span class="px-2 py-1 rounded text-xs ${
+book.status === 'Sudah Terbit' ? 'bg-green-100 text-green-800' :
+book.status === 'Proses ISBN' ? 'bg-yellow-100 text-yellow-800' :
+'bg-gray-100 text-gray-800'
+}">${book.status}</span>
+</div>
+<div><span class="font-medium">Halaman:</span> ${book.pages}</div>
+<div><span class="font-medium">Tahun:</span> ${book.year}</div>
+</div>
+</div>
+<div>
+<h4 class="font-semibold text-academic-navy mb-2">Link Terkait</h4>
+<div class="space-y-2">
+${book.links.map(link => `
+<a href="${link.url}" target="_blank" class="block text-sm bg-academic-blue text-white px-3 py-2 rounded hover:bg-blue-800 text-center">
+${link.name}
+</a>
+`).join('')}
+</div>
+</div>
+</div>
+<div>
+<h4 class="font-semibold text-academic-navy mb-2">Deskripsi</h4>
+<p class="text-gray-600 text-sm leading-relaxed">${book.description}</p>
+</div>
+</div>
+`;
+
+document.getElementById('bookDetailContent').innerHTML = content;
+document.getElementById('bookDetailModal').classList.remove('hidden');
+document.getElementById('bookDetailModal').classList.add('flex');
+}
+
+function showPreOrder() {
+alert('Fitur pre-order akan segera tersedia! Silakan hubungi customer service kami untuk informasi lebih lanjut tentang buku yang akan terbit.');
+}
+
+// Initialize filter
+document.addEventListener('DOMContentLoaded', function() {
+// Set initial active state
+const activeBtn = document.querySelector('[data-filter="all"]');
+activeBtn.classList.add('bg-academic-blue', 'text-white');
+});
+</script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'96f6e99b2170df0c',t:'MTc1NTI0MjI0OS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
